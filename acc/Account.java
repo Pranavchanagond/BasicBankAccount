@@ -20,8 +20,12 @@ public abstract class Account {
         }
     }
 
-    public float calculateMaturityaAmount(float totalPrincipleDeposited,float maturityInterest){
-          return totalPrincipleDeposited + maturityInterest;
+   public float calculateMaturityAmount( float p, float n ){
+        float t = 60/12;
+          float k =(1+rateOfInterest/100);
+           k = (float) pow (k,n);
+           return p * k;
+
     }
 
     public abstract float calculateInterest();
