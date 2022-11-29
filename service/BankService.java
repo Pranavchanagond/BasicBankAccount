@@ -56,7 +56,7 @@ public class BankService {
 
                 System.out.println("Amount Deposited = "+obj.calculateAmountDeposited());
 
-                System.out.println("Maturity Amount = "+obj.calculateMaturityaAmount(principal,age));
+                System.out.println("Maturity Amount = "+obj.calculateMaturityaAmount(principal,tenure));
             }
         } catch (BankValidationException e) {
             throw new RuntimeException(e);
